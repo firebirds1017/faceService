@@ -1181,3 +1181,576 @@ TypeError: ufunc 'subtract' did not contain a loop with signature matching types
 '[3350] [[2019-06-28 13:27:50 +0800]] INFO [glogging.py:271] Worker exiting (pid: 3350)'
 '[3351] [[2019-06-28 13:27:50 +0800]] INFO [glogging.py:271] Parent changed, shutting down: <Worker 3351>'
 '[3351] [[2019-06-28 13:27:50 +0800]] INFO [glogging.py:271] Worker exiting (pid: 3351)'
+'[6110] [[2019-08-22 08:08:06 +0800]] DEBUG [glogging.py:274] Current configuration:
+  config: gunicorn.py
+  bind: [':8081']
+  backlog: 2048
+  workers: 2
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 5000
+  max_requests_jitter: 2
+  timeout: 70
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 8190
+  limit_request_fields: 200
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/firebird/pythonProject/flasky/faceService
+  daemon: False
+  raw_env: ['FLASK_ENV=development']
+  pidfile: gunicorn.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {'version': 1, 'disable_existing_loggers': False, 'loggers': {'gunicorn.error': {'level': 'DEBUG', 'handlers': ['error_file'], 'propagate': 1, 'qualname': 'gunicorn.error'}, 'gunicorn.access': {'level': 'DEBUG', 'handlers': ['access_file'], 'propagate': 0, 'qualname': 'gunicorn.access'}}, 'handlers': {'error_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.error.log'}, 'access_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.access.log'}}, 'formatters': {'generic': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'datefmt': '[%Y-%m-%d %H:%M:%S %z]', 'class': 'logging.Formatter'}, 'access': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'class': 'logging.Formatter'}}}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: /home/firebird/pythonProject/flasky/venv/bin
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f270f488290>
+  on_reload: <function OnReload.on_reload at 0x7f270f4883b0>
+  when_ready: <function WhenReady.when_ready at 0x7f270f4884d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f270f4885f0>
+  post_fork: <function Postfork.post_fork at 0x7f270f488710>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f270f488830>
+  worker_int: <function WorkerInt.worker_int at 0x7f270f488950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f270f488a70>
+  pre_exec: <function PreExec.pre_exec at 0x7f270f488b90>
+  pre_request: <function PreRequest.pre_request at 0x7f270f488cb0>
+  post_request: <function PostRequest.post_request at 0x7f270f488d40>
+  child_exit: <function ChildExit.child_exit at 0x7f270f488e60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f270f488f80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f270f4a00e0>
+  on_exit: <function OnExit.on_exit at 0x7f270f4a0200>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []'
+'[6110] [[2019-08-22 08:08:06 +0800]] INFO [glogging.py:271] Starting gunicorn 19.9.0'
+'[6110] [[2019-08-22 08:08:06 +0800]] DEBUG [glogging.py:274] Arbiter booted'
+'[6110] [[2019-08-22 08:08:06 +0800]] INFO [glogging.py:271] Listening at: http://0.0.0.0:8081 (6110)'
+'[6110] [[2019-08-22 08:08:06 +0800]] INFO [glogging.py:271] Using worker: gunicorn.workers.ggevent.GeventWorker'
+'[6113] [[2019-08-22 08:08:06 +0800]] INFO [glogging.py:271] Booting worker with pid: 6113'
+'[6114] [[2019-08-22 08:08:06 +0800]] INFO [glogging.py:271] Booting worker with pid: 6114'
+'[6110] [[2019-08-22 08:08:06 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[6113] [[2019-08-22 08:13:23 +0800]] DEBUG [glogging.py:274] POST /face/FaceDetect'
+'[6114] [[2019-08-22 08:16:17 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[6113] [[2019-08-22 08:16:45 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[6110] [[2019-08-22 08:18:14 +0800]] INFO [glogging.py:271] Handling signal: term'
+'[6113] [[2019-08-22 08:18:14 +0800]] INFO [glogging.py:271] Worker exiting (pid: 6113)'
+'[6114] [[2019-08-22 08:18:14 +0800]] INFO [glogging.py:271] Worker exiting (pid: 6114)'
+'[46911] [[2019-08-22 08:18:15 +0800]] DEBUG [glogging.py:274] Current configuration:
+  config: gunicorn.py
+  bind: [':8081']
+  backlog: 2048
+  workers: 2
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 5000
+  max_requests_jitter: 2
+  timeout: 70
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 8190
+  limit_request_fields: 200
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/firebird/pythonProject/flasky/faceService
+  daemon: False
+  raw_env: ['FLASK_ENV=development']
+  pidfile: gunicorn.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {'version': 1, 'disable_existing_loggers': False, 'loggers': {'gunicorn.error': {'level': 'DEBUG', 'handlers': ['error_file'], 'propagate': 1, 'qualname': 'gunicorn.error'}, 'gunicorn.access': {'level': 'DEBUG', 'handlers': ['access_file'], 'propagate': 0, 'qualname': 'gunicorn.access'}}, 'handlers': {'error_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.error.log'}, 'access_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.access.log'}}, 'formatters': {'generic': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'datefmt': '[%Y-%m-%d %H:%M:%S %z]', 'class': 'logging.Formatter'}, 'access': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'class': 'logging.Formatter'}}}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: /home/firebird/pythonProject/flasky/venv/bin
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc57f702290>
+  on_reload: <function OnReload.on_reload at 0x7fc57f7023b0>
+  when_ready: <function WhenReady.when_ready at 0x7fc57f7024d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fc57f7025f0>
+  post_fork: <function Postfork.post_fork at 0x7fc57f702710>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc57f702830>
+  worker_int: <function WorkerInt.worker_int at 0x7fc57f702950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc57f702a70>
+  pre_exec: <function PreExec.pre_exec at 0x7fc57f702b90>
+  pre_request: <function PreRequest.pre_request at 0x7fc57f702cb0>
+  post_request: <function PostRequest.post_request at 0x7fc57f702d40>
+  child_exit: <function ChildExit.child_exit at 0x7fc57f702e60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc57f702f80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc57f71a0e0>
+  on_exit: <function OnExit.on_exit at 0x7fc57f71a200>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []'
+'[46911] [[2019-08-22 08:18:15 +0800]] INFO [glogging.py:271] Starting gunicorn 19.9.0'
+'[46911] [[2019-08-22 08:18:15 +0800]] DEBUG [glogging.py:274] Arbiter booted'
+'[46911] [[2019-08-22 08:18:15 +0800]] INFO [glogging.py:271] Listening at: http://0.0.0.0:8081 (46911)'
+'[46911] [[2019-08-22 08:18:15 +0800]] INFO [glogging.py:271] Using worker: gunicorn.workers.ggevent.GeventWorker'
+'[46914] [[2019-08-22 08:18:15 +0800]] INFO [glogging.py:271] Booting worker with pid: 46914'
+'[46915] [[2019-08-22 08:18:15 +0800]] INFO [glogging.py:271] Booting worker with pid: 46915'
+'[46911] [[2019-08-22 08:18:15 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[46915] [[2019-08-22 08:18:24 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[46915] [[2019-08-22 08:26:43 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[46914] [[2019-08-22 08:27:40 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[46915] [[2019-08-22 08:28:03 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[46911] [[2019-08-22 08:50:32 +0800]] INFO [glogging.py:271] Handling signal: term'
+'[2828] [[2019-08-22 11:06:47 +0800]] DEBUG [glogging.py:274] Current configuration:
+  config: gunicorn.py
+  bind: [':8081']
+  backlog: 2048
+  workers: 2
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 5000
+  max_requests_jitter: 2
+  timeout: 70
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 8190
+  limit_request_fields: 200
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/firebird/pythonProject/flasky/faceService
+  daemon: False
+  raw_env: ['FLASK_ENV=development']
+  pidfile: gunicorn.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {'version': 1, 'disable_existing_loggers': False, 'loggers': {'gunicorn.error': {'level': 'DEBUG', 'handlers': ['error_file'], 'propagate': 1, 'qualname': 'gunicorn.error'}, 'gunicorn.access': {'level': 'DEBUG', 'handlers': ['access_file'], 'propagate': 0, 'qualname': 'gunicorn.access'}}, 'handlers': {'error_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.error.log'}, 'access_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.access.log'}}, 'formatters': {'generic': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'datefmt': '[%Y-%m-%d %H:%M:%S %z]', 'class': 'logging.Formatter'}, 'access': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'class': 'logging.Formatter'}}}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: /home/firebird/pythonProject/flasky/venv/bin
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb8c9bfe290>
+  on_reload: <function OnReload.on_reload at 0x7fb8c9bfe3b0>
+  when_ready: <function WhenReady.when_ready at 0x7fb8c9bfe4d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb8c9bfe5f0>
+  post_fork: <function Postfork.post_fork at 0x7fb8c9bfe710>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb8c9bfe830>
+  worker_int: <function WorkerInt.worker_int at 0x7fb8c9bfe950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb8c9bfea70>
+  pre_exec: <function PreExec.pre_exec at 0x7fb8c9bfeb90>
+  pre_request: <function PreRequest.pre_request at 0x7fb8c9bfecb0>
+  post_request: <function PostRequest.post_request at 0x7fb8c9bfed40>
+  child_exit: <function ChildExit.child_exit at 0x7fb8c9bfee60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb8c9bfef80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb8c9c150e0>
+  on_exit: <function OnExit.on_exit at 0x7fb8c9c15200>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []'
+'[2828] [[2019-08-22 11:06:47 +0800]] INFO [glogging.py:271] Starting gunicorn 19.9.0'
+'[2828] [[2019-08-22 11:06:47 +0800]] DEBUG [glogging.py:274] Arbiter booted'
+'[2828] [[2019-08-22 11:06:47 +0800]] INFO [glogging.py:271] Listening at: http://0.0.0.0:8081 (2828)'
+'[2828] [[2019-08-22 11:06:47 +0800]] INFO [glogging.py:271] Using worker: gunicorn.workers.ggevent.GeventWorker'
+'[2831] [[2019-08-22 11:06:48 +0800]] INFO [glogging.py:271] Booting worker with pid: 2831'
+'[2832] [[2019-08-22 11:06:48 +0800]] INFO [glogging.py:271] Booting worker with pid: 2832'
+'[2828] [[2019-08-22 11:06:49 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[2828] [[2019-08-22 11:07:58 +0800]] CRITICAL [glogging.py:262] WORKER TIMEOUT (pid:2831)'
+'[2828] [[2019-08-22 11:07:59 +0800]] CRITICAL [glogging.py:262] WORKER TIMEOUT (pid:2832)'
+'[2841] [[2019-08-22 11:07:59 +0800]] INFO [glogging.py:271] Booting worker with pid: 2841'
+'[2828] [[2019-08-22 11:07:59 +0800]] DEBUG [glogging.py:274] 1 workers'
+'[2842] [[2019-08-22 11:07:59 +0800]] INFO [glogging.py:271] Booting worker with pid: 2842'
+'[2828] [[2019-08-22 11:07:59 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[2841] [[2019-08-22 11:09:11 +0800]] DEBUG [glogging.py:274] POST /face/FaceDetect'
+'[2841] [[2019-08-22 11:09:19 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2841] [[2019-08-22 11:09:21 +0800]] ERROR [glogging.py:277] Socket error processing request.'
+Traceback (most recent call last):
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 66, in handle
+    six.reraise(*sys.exc_info())
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 160, in handle_request
+    addr)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 129, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2328, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2314, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1760, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/firebird/pythonProject/flasky/faceService/app/face/views.py", line 82, in face_compare_face
+    result = FaceUtils.compare_face(known_face=face_base64['faceimage1'], unknown_face=face_base64['faceimage2'])
+  File "/home/firebird/pythonProject/flasky/faceService/app/face/faceutil.py", line 90, in compare_face
+    known_face_image = face_recognition.load_image_file(FaceUtils.get_image_data(known_face))
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/face_recognition/api.py", line 83, in load_image_file
+    im = PIL.Image.open(file)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/PIL/Image.py", line 2705, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <_io.BytesIO object at 0x7fb8bebacf50>
+'[2828] [[2019-08-22 11:13:51 +0800]] INFO [glogging.py:271] Handling signal: term'
+'[2841] [[2019-08-22 11:13:51 +0800]] INFO [glogging.py:271] Worker exiting (pid: 2841)'
+'[2842] [[2019-08-22 11:13:51 +0800]] INFO [glogging.py:271] Worker exiting (pid: 2842)'
+'[2975] [[2019-08-22 11:13:53 +0800]] DEBUG [glogging.py:274] Current configuration:
+  config: gunicorn.py
+  bind: [':8081']
+  backlog: 2048
+  workers: 2
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 5000
+  max_requests_jitter: 2
+  timeout: 70
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 8190
+  limit_request_fields: 200
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/firebird/pythonProject/flasky/faceService
+  daemon: False
+  raw_env: ['FLASK_ENV=development']
+  pidfile: gunicorn.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {'version': 1, 'disable_existing_loggers': False, 'loggers': {'gunicorn.error': {'level': 'DEBUG', 'handlers': ['error_file'], 'propagate': 1, 'qualname': 'gunicorn.error'}, 'gunicorn.access': {'level': 'DEBUG', 'handlers': ['access_file'], 'propagate': 0, 'qualname': 'gunicorn.access'}}, 'handlers': {'error_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.error.log'}, 'access_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.access.log'}}, 'formatters': {'generic': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'datefmt': '[%Y-%m-%d %H:%M:%S %z]', 'class': 'logging.Formatter'}, 'access': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'class': 'logging.Formatter'}}}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: /home/firebird/pythonProject/flasky/venv/bin
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe649d0b290>
+  on_reload: <function OnReload.on_reload at 0x7fe649d0b3b0>
+  when_ready: <function WhenReady.when_ready at 0x7fe649d0b4d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe649d0b5f0>
+  post_fork: <function Postfork.post_fork at 0x7fe649d0b710>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe649d0b830>
+  worker_int: <function WorkerInt.worker_int at 0x7fe649d0b950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe649d0ba70>
+  pre_exec: <function PreExec.pre_exec at 0x7fe649d0bb90>
+  pre_request: <function PreRequest.pre_request at 0x7fe649d0bcb0>
+  post_request: <function PostRequest.post_request at 0x7fe649d0bd40>
+  child_exit: <function ChildExit.child_exit at 0x7fe649d0be60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe649d0bf80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe649d230e0>
+  on_exit: <function OnExit.on_exit at 0x7fe649d23200>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []'
+'[2975] [[2019-08-22 11:13:53 +0800]] INFO [glogging.py:271] Starting gunicorn 19.9.0'
+'[2975] [[2019-08-22 11:13:53 +0800]] DEBUG [glogging.py:274] Arbiter booted'
+'[2975] [[2019-08-22 11:13:53 +0800]] INFO [glogging.py:271] Listening at: http://0.0.0.0:8081 (2975)'
+'[2975] [[2019-08-22 11:13:53 +0800]] INFO [glogging.py:271] Using worker: gunicorn.workers.ggevent.GeventWorker'
+'[2978] [[2019-08-22 11:13:53 +0800]] INFO [glogging.py:271] Booting worker with pid: 2978'
+'[2979] [[2019-08-22 11:13:53 +0800]] INFO [glogging.py:271] Booting worker with pid: 2979'
+'[2975] [[2019-08-22 11:13:53 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[2978] [[2019-08-22 11:15:38 +0800]] DEBUG [glogging.py:274] GET /face/FaceDetect'
+'[2979] [[2019-08-22 11:15:49 +0800]] DEBUG [glogging.py:274] POST /face/FaceDetect'
+'[2979] [[2019-08-22 11:16:46 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2979] [[2019-08-22 11:16:55 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2979] [[2019-08-22 11:17:52 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2979] [[2019-08-22 11:17:53 +0800]] ERROR [glogging.py:277] Socket error processing request.'
+Traceback (most recent call last):
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 66, in handle
+    six.reraise(*sys.exc_info())
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 160, in handle_request
+    addr)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 129, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2328, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2314, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1760, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/firebird/pythonProject/flasky/faceService/app/face/views.py", line 82, in face_compare_face
+    result = FaceUtils.compare_face(known_face=face_base64['faceimage1'], unknown_face=face_base64['faceimage2'])
+  File "/home/firebird/pythonProject/flasky/faceService/app/face/faceutil.py", line 90, in compare_face
+    known_face_image = face_recognition.load_image_file(FaceUtils.get_image_data(known_face))
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/face_recognition/api.py", line 83, in load_image_file
+    im = PIL.Image.open(file)
+  File "/home/firebird/pythonProject/flasky/venv/lib/python3.7/site-packages/PIL/Image.py", line 2705, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <_io.BytesIO object at 0x7fe63e368d70>
+'[2979] [[2019-08-22 11:18:25 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2978] [[2019-08-22 11:30:31 +0800]] DEBUG [glogging.py:274] POST /face/FaceDetect'
+'[2978] [[2019-08-22 11:30:34 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2979] [[2019-08-22 11:31:01 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2978] [[2019-08-22 11:32:57 +0800]] DEBUG [glogging.py:274] POST /face/FaceDetect'
+'[2978] [[2019-08-22 11:32:58 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2979] [[2019-08-22 11:38:37 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'
+'[2975] [[2019-08-22 11:39:56 +0800]] INFO [glogging.py:271] Handling signal: term'
+'[2979] [[2019-08-22 11:39:57 +0800]] INFO [glogging.py:271] Worker exiting (pid: 2979)'
+'[2978] [[2019-08-22 11:39:57 +0800]] INFO [glogging.py:271] Worker exiting (pid: 2978)'
+'[3069] [[2019-08-22 11:40:24 +0800]] DEBUG [glogging.py:274] Current configuration:
+  config: gunicorn.py
+  bind: [':8081']
+  backlog: 2048
+  workers: 2
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 5000
+  max_requests_jitter: 2
+  timeout: 70
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 8190
+  limit_request_fields: 200
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/firebird/pythonProject/flasky/faceService
+  daemon: False
+  raw_env: ['FLASK_ENV=development']
+  pidfile: gunicorn.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {'version': 1, 'disable_existing_loggers': False, 'loggers': {'gunicorn.error': {'level': 'DEBUG', 'handlers': ['error_file'], 'propagate': 1, 'qualname': 'gunicorn.error'}, 'gunicorn.access': {'level': 'DEBUG', 'handlers': ['access_file'], 'propagate': 0, 'qualname': 'gunicorn.access'}}, 'handlers': {'error_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.error.log'}, 'access_file': {'class': 'logging.handlers.RotatingFileHandler', 'maxBytes': 1073741824, 'backupCount': 1, 'formatter': 'generic', 'filename': 'logs/gunicorn.access.log'}}, 'formatters': {'generic': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'datefmt': '[%Y-%m-%d %H:%M:%S %z]', 'class': 'logging.Formatter'}, 'access': {'format': "'[%(process)d] [%(asctime)s] %(levelname)s [%(filename)s:%(lineno)s] %(message)s'", 'class': 'logging.Formatter'}}}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: /home/firebird/pythonProject/flasky/venv/bin
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5108180290>
+  on_reload: <function OnReload.on_reload at 0x7f51081803b0>
+  when_ready: <function WhenReady.when_ready at 0x7f51081804d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f51081805f0>
+  post_fork: <function Postfork.post_fork at 0x7f5108180710>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5108180830>
+  worker_int: <function WorkerInt.worker_int at 0x7f5108180950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5108180a70>
+  pre_exec: <function PreExec.pre_exec at 0x7f5108180b90>
+  pre_request: <function PreRequest.pre_request at 0x7f5108180cb0>
+  post_request: <function PostRequest.post_request at 0x7f5108180d40>
+  child_exit: <function ChildExit.child_exit at 0x7f5108180e60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5108180f80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f51081980e0>
+  on_exit: <function OnExit.on_exit at 0x7f5108198200>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []'
+'[3069] [[2019-08-22 11:40:24 +0800]] INFO [glogging.py:271] Starting gunicorn 19.9.0'
+'[3069] [[2019-08-22 11:40:24 +0800]] DEBUG [glogging.py:274] Arbiter booted'
+'[3069] [[2019-08-22 11:40:24 +0800]] INFO [glogging.py:271] Listening at: http://0.0.0.0:8081 (3069)'
+'[3069] [[2019-08-22 11:40:24 +0800]] INFO [glogging.py:271] Using worker: gunicorn.workers.ggevent.GeventWorker'
+'[3074] [[2019-08-22 11:40:24 +0800]] INFO [glogging.py:271] Booting worker with pid: 3074'
+'[3075] [[2019-08-22 11:40:24 +0800]] INFO [glogging.py:271] Booting worker with pid: 3075'
+'[3069] [[2019-08-22 11:40:24 +0800]] DEBUG [glogging.py:274] 2 workers'
+'[3075] [[2019-08-22 11:41:10 +0800]] DEBUG [glogging.py:274] POST /face/Face2Face'

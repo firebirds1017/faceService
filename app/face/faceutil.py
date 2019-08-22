@@ -27,11 +27,16 @@ class FaceUtils:
         :param face:
         :return:image_data
         """
+
         if validators.url(face):
             '''is url or base64 str'''
             image_bytes = urlopen(face).read()
             image_data = BytesIO(image_bytes)
         else:
+            missed_padding = 4 - len(face) % 4
+            if missed_padding > 0:
+                face = face + '=' * missed_padding
+            print(face)
             byte_data = base64.b64decode(face)
             image_data = BytesIO(byte_data)
 
