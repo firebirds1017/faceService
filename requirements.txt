@@ -23,7 +23,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 meld3==1.0.2
 numpy==1.16.4
-opencv-python==4.1.0.25
+opencv-python==4.2.0.32
 parso==0.4.0
 pexpect==4.7.0
 pickleshare==0.7.5
